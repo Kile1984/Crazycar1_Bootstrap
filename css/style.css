@@ -1,0 +1,256 @@
+@font-face{
+	font-family: raleway;
+	src: url(fonts/Raleway-Regular.ttf);
+}
+@font-face{
+	font-family: raleway-bold;
+	src: url(fonts/Raleway-Bold.ttf);
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #282828;
+    line-height: 26px;
+    background: #FFFFFF;
+	padding-top: 105px;
+	padding-right: 0!important;
+}
+#mainSection, .aboutContent .media-body h5, #price .card h4, #price .card-title, #contact h3{
+	font-weight: 900;
+}
+.title h1, .aboutContent .media-body h5, .mainContent h2, #about h5, #team h5, #team .small, #price .card h4{
+	font-family: raleway-bold;
+}
+section{
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+.navbar-nav li a:hover, .active, #team .card-body, #price .card-body, #price .card h4, #contact .btn{
+	background: #FEDE00;
+}
+:focus, .form-control:focus {
+    outline: none!important;
+    outline: 0!important;
+    box-shadow: none!important;
+}
+.navbar-nav li a{
+	transition: .3s;
+	-webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;	
+ }
+ .animateHover{
+ 	transition: .1s;
+	-webkit-transition: .1s;
+    -moz-transition: .1s;
+    -o-transition: .1s;	
+ }
+/*header*/
+nav{
+	background: #4E4E4E;
+}
+.nav-link{
+	padding-top: 40px;
+    padding-bottom: 36px;
+    padding-left: 12px!important;
+    padding-right: 13px!important;
+}
+#navbarSupportedContent{
+	float: right;
+}
+.navbar-nav li a{
+	font-size:14px;
+	color: #fff;
+}
+.navbar-nav li a:hover{
+	color: #4E4E4E!important;
+}
+.active a{
+	color: #4E4E4E!important;
+}
+/*MAIN SECTION*/
+#mainSection{
+	background: url("images/header-bgr.jpg") no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	border-bottom: 14px solid #FEDE00;
+	padding-top: 12%;
+	padding-bottom: 12%;
+	overflow: hidden;
+}
+.mainContent h2, .mainContent p, .mainContent a{
+	background: rgb(254, 222, 0);
+	padding: 15px;
+}
+.mainContent a{
+	color: #040404;
+	text-decoration: none;
+}
+.navbar-toggler{
+	right: 0;
+}
+/*service*/
+.title h1{
+	color: #4F4F4F;
+	border-bottom: 2px solid #FEDE00;
+}
+/*about*/
+#about{
+	background: #F7F7F7;
+}
+#about:before{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F7F7F7;
+    transform: skewY(14deg);
+}
+#about h5{
+	color: #4F4F4F;
+}
+/*team*/
+#team .card-body{
+	position: absolute;
+    bottom: -70px;
+}
+#team .card{
+	border: none;
+	margin-bottom: 70px;
+}
+#team .small{
+	color: rgb(40, 141, 203);
+}
+/*gallery*/
+.animateHover{
+	top: 0;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.62);
+	border: 20px solid rgba(254, 222, 0, 0.63);
+	visibility: hidden;
+}
+.hover:hover .animateHover{
+	visibility: visible;
+	transform: scale(0.9);
+}
+.animateHover img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-body{
+	padding: 0!important;
+}
+.ekko-lightbox-nav-overlay span{
+	color: #ffc107!important;
+}
+#gallery .galleryBtn, #price .priceBtn{
+	color: #fff;
+	text-decoration: none;
+	background: #ffb74d;
+	padding: 10px 20px;
+}
+/*price*/
+#price .card{
+	background: #F3F3F3;
+	height: 400px;
+}
+#price .card-body, #price .card h4{
+	height: 105px;
+}
+#price .card-text:last-child {
+    margin-bottom: 0;
+    height: 255px;
+}
+#price table{
+	background-color: #244261;
+}
+/*contact*/
+#contact .btn{
+	color: #000;
+}
+/*footer*/
+footer{
+	color: #fff;
+	background: #4E4E4E;
+}
+#btnScrollTop{
+	color: #199cdb;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: -1;
+	transition: 0.3s;
+	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+}
+#btnScrollTop:hover{
+	opacity: 1!important;
+}
+/*MEDIA*/
+@media (max-width: 992px) {
+	body{
+		padding-top: 0;
+	}
+	.fixed-top {
+        position: static;
+    }
+	nav{
+		background: #141414;
+	}
+	.nav-link{
+		color: #fff!important;
+		padding-top: 0;
+	    padding-bottom: 0;
+	    padding-left: 0!important;
+	    line-height: 3;
+	}
+	#navbarSupportedContent{
+		float: none;
+	}
+	.active{
+		background: transparent!important;
+		color: #fff!important;
+	}
+	.navbar-nav li a{
+		color: #fff!important;
+	}
+	.navbar-nav li a:hover{
+		color: #fff!important;
+		background: transparent;
+	}
+	.navContent{
+		padding-top: 10px;
+    	padding-bottom: 10px;
+	}
+	button.navbar-toggler{
+		position: absolute;
+    	top: -55px;
+    	right: 15px;
+    	border-color: #ddd;
+    	border-radius: 0;
+    	padding: 5px 10px;
+	}
+}
+@media (max-width: 575px) {
+	#mainSection{
+		background: url("images/header-bgr.jpg") no-repeat 100% bottom;
+	
+	}
+	.mainContent h2, .mainContent p{
+		background: rgba(255, 255, 255, 0.68);
+	}
+}
+@media (max-width: 575px) {
+	#about img{
+		width: 100%;
+	}
+}
